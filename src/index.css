@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'montseratt', 'sans-serif';
+}
+
+.app {
+  background-image: url('./assets/Mountain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.app.warm {
+  background-image: url('./assets/sunny.jpg');
+  background-position: top;
+}
+.mask-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3));
+  z-index: 0;
+}
+main{
+  position: relative;
+  min-height: 100vh;
+  z-index: 1000;
+}
+
+.search-box {
+  width: 100%;
+  padding: 40px 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.search-box .search-bar {
+  width: 50%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.4);
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:hover {
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-btn {
+  border: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 21px;
+  font-style: italic;
+  padding: 10px;
+  margin-left: 15px;
+  transition: 0.4s ease;
+}
+
+.search-btn:hover {
+  background-color: rgba(0, 39, 43, 0.9);
+  border-radius: 5px 5px;
+  cursor: pointer;
+}
+
+.location-box .location {
+  color: rgb(255, 255, 255);
+  font-size: 37px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 70px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(34, 74, 78, 0.6);
+  text-align: center;
+  box-shadow:  3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow: 3px 4px rgba(50, 50, 70, 0.5);
+}
+
+h3 {
+  font-size: 32px;
+  color:rgb(0, 0, 0);
+}
